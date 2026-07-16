@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>다온심리상담센터</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#215B3C;
+--secondary:#E7B26A;
+--bg:#FAF8F3;
+--text:#333333;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Noto Sans KR',sans-serif;
+background:#fff;
+color:var(--text);
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+position:sticky;
+top:0;
+background:white;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo img{
+height:60px;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:var(--primary);
+font-weight:500;
+}
+
+.hero{
+background:linear-gradient(180deg,#FAF8F3 0%,#FFFFFF 100%);
+padding:100px 20px;
+text-align:center;
+}
+
+.hero-logo{
+width:260px;
+max-width:80%;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:56px;
+color:var(--primary);
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:20px;
+color:#555;
+margin-bottom:40px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+background:var(--primary);
+color:white;
+padding:15px 35px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-outline{
+border:2px solid var(--primary);
+color:var(--primary);
+padding:15px 35px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+}
+
+.section{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:var(--primary);
+margin-bottom:50px;
+}
+
+.center-text{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:19px;
+}
+
+.light{
+background:var(--bg);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:var(--primary);
+margin-bottom:10px;
+}
+
+.vision-box{
+background:white;
+padding:50px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+}
+
+.vision-box h3{
+font-size:32px;
+color:var(--primary);
+margin-bottom:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery-item{
+height:220px;
+background:#eaeaea;
+border-radius:16px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+color:#999;
+}
+
+.notice{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.07);
+}
+
+.notice li{
+padding:12px 0;
+border-bottom:1px solid #eee;
+list-style:none;
+}
+
+.notice li:last-child{
+border:none;
+}
+
+footer{
+background:var(--primary);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+footer h3{
+margin-bottom:15px;
+}
+
+footer p{
+opacity:.9;
+}
+
+@media(max-width:768px){
+
+.nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+padding:70px 20px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<div class="logo">
+<img src="logo.png" alt="다온심리상담센터">
+</div>
+
+<nav>
+<a href="#about">센터소개</a>
+<a href="#values">핵심가치</a>
+<a href="#activities">주요활동</a>
+<a href="#vision">비전</a>
+<a href="#gallery">갤러리</a>
+<a href="#notice">공지사항</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<img src="logo.png" class="hero-logo" alt="다온심리상담센터">
+
+<h1>마음의 회복과 성장을 위한 동행</h1>
+
+<p>
+다온심리상담센터는 개인과 공동체의 심리적 안녕과 건강한 성장을 지원하는 기관입니다.
+회복과 성장, 공감과 행복의 가치를 바탕으로 건강한 삶을 위한 다양한 심리 지원 활동을 소개합니다.
+</p>
+
+<div class="buttons">
+<a href="#about" class="btn">센터소개</a>
+<a href="#activities" class="btn-outline">주요활동</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="section">
+
+<div class="container">
+
+<h2 class="section-title">센터소개</h2>
+
+<p class="center-text">
+다온심리상담센터는 건강한 마음과 행복한 삶을 지원하기 위해 설립된 심리상담 전문기관입니다.
+개인과 공동체의 심리적 안녕을 돕고 건강한 성장을 지원하는 다양한 활동을 통해
+보다 따뜻하고 행복한 사회를 만들어가고자 합니다.
+</p>
+
+</div>
+
+</section>
+
+<section id="values" class="section light">
+
+<div class="container">
+
+<h2 class="section-title">핵심 가치</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>회복</h3>
+<p>건강한 마음의 회복을 지원합니다.</p>
+</div>
+
+<div class="card">
+<h3>성장</h3>
+<p>개인의 지속적인 성장과 발전을 응원합니다.</p>
+</div>
+
+<div class="card">
+<h3>공감</h3>
+<p>진심 어린 이해와 공감을 중요하게 생각합니다.</p>
+</div>
+
+<div class="card">
+<h3>행복</h3>
+<p>더 나은 삶과 행복을 추구합니다.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="activities" class="section">
+
+<div class="container">
+
+<h2 class="section-title">주요 활동</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>심리상담 지원</h3>
+<p>건강한 심리적 안정을 위한 다양한 지원 활동</p>
+</div>
+
+<div class="card">
+<h3>심리교육 프로그램</h3>
+<p>심리 이해와 성장을 위한 교육 프로그램</p>
+</div>
+
+<div class="card">
+<h3>정서지원 활동</h3>
+<p>건강한 정서 형성을 위한 지원 활동</p>
+</div>
+
+<div class="card">
+<h3>지역사회 연계 활동</h3>
+<p>지역사회와 함께하는 심리 지원 네트워크</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="vision" class="section light">
+
+<div class="container">
+
+<h2 class="section-title">비전</h2>
+
+<div class="vision-box">
+
+<h3>회복 · 성장 · 공감</h3>
+
+<p>
+다온심리상담센터는 개인과 공동체가 건강한 관계를 형성하고,
+행복한 삶을 만들어 갈 수 있도록 지속적으로 노력합니다.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery" class="section">
+
+<div class="container">
+
+<h2 class="section-title">갤러리</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">활동 사진</div>
+<div class="gallery-item">활동 사진</div>
+<div class="gallery-item">활동 사진</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="notice" class="section light">
+
+<div class="container">
+
+<h2 class="section-title">공지사항</h2>
+
+<div class="notice">
+
+<ul>
+
+<li>다온심리상담센터 홈페이지가 개설되었습니다.</li>
+
+<li>향후 다양한 소식을 안내해 드릴 예정입니다.</li>
+
+<li>공지사항 영역 준비 중입니다.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>다온심리상담센터</h3>
+
+<p>
+서울특별시 영등포구 선유로 114<br>
+양평자이비즈타워 제10층 제1008호
+</p>
+
+<br>
+
+<p>
+© 2026 DAON Psychological Counseling Center
+</p>
+
+</footer>
+
+</body>
+</html>
